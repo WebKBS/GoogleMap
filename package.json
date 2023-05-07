@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "start": "webpack serve --open --mode=development --hot"
   },
   "keywords": [
     "typescript",
@@ -14,10 +14,12 @@
   "author": "Kang",
   "license": "ISC",
   "devDependencies": {
+    "@types/googlemaps": "^3.43.3",
     "ts-loader": "^6.2.1",
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "webpack": "^5.82.0",
     "webpack-cli": "^5.1.0",
     "webpack-dev-server": "^4.14.0"
